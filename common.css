@@ -93,7 +93,12 @@ header #diet-rec-title {
 
 .username-top {
   padding-left: 5px;
+  padding-right: 5px;
   font-size: 20px;
+}
+
+.username-top.btn {
+  text-decoration: underline;
 }
 
 .backbtn-top {
@@ -179,6 +184,12 @@ header #diet-rec-title {
   margin: 10px 0px;
 }
 
+.main-list.add-panel {
+  padding: 0 20px;
+  border: 1px solid black;
+  /* background-color: #f0f0f0; */
+}
+
 .main-list-item {
   display: flex;
   justify-content: space-between;
@@ -188,9 +199,16 @@ header #diet-rec-title {
   background-color: rgb(238, 238, 238);
   border: 1px solid black;
 }
+
 .main-list-item.user-item {
   height: 50px;
   margin: 20px 0;
+  justify-content: flex-start;
+}
+
+.main-list-item.med-item {
+  height: 50px;
+  margin: 0;
   justify-content: flex-start;
 }
 
@@ -201,6 +219,13 @@ header #diet-rec-title {
 .main-list-item.user-info {
   display: flex;
   justify-content: space-between;
+}
+
+.main-list-item.user-info.d {
+  font-size: 20px;
+  border: none;
+  margin: 10px 0;
+  background-color: white;
 }
 
 .main-list-item.user-info .label {
@@ -249,7 +274,6 @@ header #diet-rec-title {
   margin: 0 10px;
 }
 
-
 .main-list.details {
   border: 1px solid black;
   border-radius: 20px;
@@ -257,7 +281,14 @@ header #diet-rec-title {
   padding: 20px 0 40px;
 }
 
-#detail-header{
+.main-list.details.reminder {
+  border: 1px solid black;
+  border-radius: 10px;
+  /* top | horizontal | bottom */
+  padding: 10px 0;
+}
+
+#detail-header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -265,15 +296,15 @@ header #diet-rec-title {
   padding: 0 10px;
 }
 
-#curr-timeslot{
+#curr-timeslot {
   font-weight: bold;
 }
 
-#cancel-btn{
+#cancel-btn {
   text-decoration: underline;
 }
 
-.main-list-item.detail-item{
+.main-list-item.detail-item {
   display: block;
   height: auto;
   margin-top: 10px;
@@ -281,7 +312,14 @@ header #diet-rec-title {
   padding: 10px;
 }
 
-.main-list-item.detail-item h3{
+.main-list-item.reminder-item {
+  display: block;
+  height: auto;
+  border: none;
+  padding: 10px;
+}
+
+.main-list-item.detail-item h3 {
   margin: 0;
   padding: 0;
 }
@@ -558,6 +596,67 @@ footer.demo-footer {
 
 .annotation.proceed {
   top: 50%;
+}
+
+/* MedManagement */
+.user-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-grow: 1;
+  position: relative;
+  margin: 0 10px;
+  padding: 0;
+  /* border: 1px solid black; */
+}
+
+#user-list-header input {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid white;
+  border-radius: 0;
+  background-color: black;
+}
+
+#user-list-header span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 34px;
+  height: 34px;
+  border: 1px solid black;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-reminder-panel {
+  margin-top: 10px;
+  background-color: #d4d4d4;
+  height: 200px;
+  border: 1px solid black;
+}
+
+.panel-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+}
+
+.panel-header h2 {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid;
+  padding: 0 10px;
+}
+
+.panel-header span {
+  position: absolute;
+  right: 20px;
+  /* padding: 10px; */
+  font-size: 30px;
 }
 
 /* iOS toggle */

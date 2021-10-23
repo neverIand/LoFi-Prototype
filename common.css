@@ -280,11 +280,16 @@ header #diet-rec-title {
   /* border-radius: 10px; */
 }
 
-.main-list-item.event-item {
+.main-list-item.event-item.expanded{
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  height: auto;
 }
 
 .main-list-item.event-item .event {
   margin: 0 10px;
+  /* border: 1px solid red; */
 }
 
 .main-list.details {

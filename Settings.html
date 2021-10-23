@@ -18,6 +18,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="common.css" />
+    <!-- <link rel="stylesheet" href="common-hifi.css" /> -->
   </head>
   <body>
     <!-- ########### -->
@@ -25,31 +26,57 @@
     <!-- ########### -->
 
     <div class="interface-container">
-      <header class="account-header">
+      <header class="account-header complete">
         <div class="userinfo-top">
-          <div class="avartar-small">avartar</div>
-          <div class="username-top">username</div>
+          <div class="avartar-small complete">
+            <!-- <img src="avartar.jpg" alt="" /> -->
+          </div>
+          <div class="userinfo-label">
+            <div class="username-top complete">Gary</div>
+            <div class="account">Account: ******23</div>
+          </div>
         </div>
 
-        <div id="add-btn-top">+</div>
+        <div class="add-btn-top complete">
+          <span class="fas fa-plus-circle"></span>
+        </div>
       </header>
 
       <div class="content">
         <div class="main-list">
+          <!-- Removed -->
           <div class="main-list-item">
-            <span class="fas fa-heartbeat"> Measure</span>
+            <div class="setting-label">
+              <span class="fas fa-heartbeat"></span>
+              Measure
+            </div>
           </div>
           <div class="main-list-item">
-            <span class="fas fa-book"> Diary</span>
+            <div class="setting-label">
+              <span class="fas fa-book"></span>
+              Diary
+            </div>
+          </div>
+          <div class="main-list-item">
+            <div class="setting-label">
+              <span class="fas fa-book"></span>
+              External Device
+            </div>
           </div>
         </div>
 
         <div class="main-list">
           <div class="main-list-item">
-            <span class="fas fa-cog"> Settings</span>
+            <div class="setting-label">
+              <span class="fas fa-cog"></span>
+              Settings
+            </div>
           </div>
           <div class="main-list-item">
-            <span class="fas fa-lock"> Change Password</span>
+            <div class="setting-label">
+              <span class="fas fa-lock"></span>
+              Change Password
+            </div>
           </div>
         </div>
       </div>

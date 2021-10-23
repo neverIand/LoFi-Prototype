@@ -2,15 +2,7 @@
   margin: 0;
   padding: 0;
   /* box-sizing: border-box; */
-}
-
-body{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  flex-basis: 380px;
-  justify-content: flex-start;
-  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* variables */
@@ -65,6 +57,12 @@ header.account-header {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  background-color: #0f8677;
+}
+
+header.account-header.complete {
+  height: 140px;
+  /* background-color: #0f8677; */
 }
 
 header.startup {
@@ -86,11 +84,26 @@ header #diet-rec-title {
   align-items: center;
   color: black;
   font-size: 10px;
-  width: 40px;
-  height: 40px;
+  width: 80px;
+  height: 80px;
   margin: auto 5px;
   border-radius: 50%;
   background-color: white;
+  overflow: hidden;
+}
+
+.avartar-small img {
+  width: 80px;
+}
+
+.userinfo-label {
+  line-height: 40px;
+  height: 80px;
+  /* border: 1px solid red; */
+}
+
+.account {
+  font-size: 12px;
 }
 
 .userinfo-top {
@@ -104,6 +117,12 @@ header #diet-rec-title {
   padding-left: 5px;
   padding-right: 5px;
   font-size: 20px;
+}
+
+.username-top.complete {
+  font-weight: bold;
+  padding: 0;
+  font-size: 22px;
 }
 
 .username-top.btn {
@@ -129,6 +148,10 @@ header #diet-rec-title {
   width: 40px;
   height: 40px;
   margin: auto 5px;
+}
+
+.add-btn-top.complete {
+  font-size: 24px;
 }
 
 /* skip button for tutorial */
@@ -186,6 +209,7 @@ header #diet-rec-title {
   margin: 20px 10px;
   /* border: 1px solid black; */
   box-sizing: border-box;
+  font-weight: bold;
 }
 
 .main-list h2 {
@@ -205,12 +229,25 @@ header #diet-rec-title {
   align-items: center;
   padding-left: 10px;
   height: 40px;
-  background-color: rgb(238, 238, 238);
-  border: 1px solid black;
+  background-color: #A6E0DD;
+  border: 1px solid #94bee2;
+  /* box-shadow: 0px 2px 2px 0px #B2AEA6; */
 }
 
-.main-list-item span{
+.setting-label{
+  font-weight: bold;
+}
 
+
+.main-list-item .fas {
+  color: white;
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  border-radius: 50%;
+  padding: 4px;
+  background-color: #03658C;
 }
 
 .main-list-item.user-item {
@@ -556,12 +593,16 @@ footer.demo-footer {
 }
 
 .functions.add-btn {
+  display: flex;
+  justify-content: center;
   align-items: center;
   width: var(--add-btn-height);
   height: var(--add-btn-height);
   font-size: 50px;
   border-radius: 50%;
-  background-color: white;
+  color: white;
+  border: 5px solid white;
+  background-color: #04BEC4;
   box-shadow: 0px 2px 2px rgb(136, 136, 136);
 }
 
@@ -604,7 +645,7 @@ footer.demo-footer {
   position: absolute;
   bottom: 100px;
   color: white;
-  font-size: 24px;
+  font-size: 30px;
   /* background-color: white; */
 }
 
@@ -612,7 +653,6 @@ footer.demo-footer {
   font-size: 20px;
   top: 50%;
 }
-
 
 /* MedManagement */
 .user-list-header {
@@ -695,14 +735,16 @@ footer.demo-footer {
   pointer-events: none;
 } */
 
-#theme-toggle {
+span#theme-toggle {
   display: inline-block;
-  width: var(--button-width);
-  height: var(--button-height);
+  width: var(--button-width) !important;
+  height: var(--button-height) !important;
+  /* width:52px; */
+  /* height: 22px; */
   background-color: rgb(201, 201, 201);
   border-radius: calc(var(--button-height) / 2);
   position: relative;
-  /* margin-top: 2px; */
+  /* margin-top: 4px; */
   transition: 0.3s all ease-in-out;
   cursor: pointer;
 }

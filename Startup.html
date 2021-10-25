@@ -4,25 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="shortcut icon" href="icon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon" />
     <!-- third-generation iPad with high-resolution Retina display: -->
-    <link
-      rel="apple-touch-icon-precomposed"
-      sizes="144x144"
-      href="icon.png"
-    />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="icon.png" />
     <!-- iPhone with high-resolution Retina display: -->
-    <link
-      rel="apple-touch-icon-precomposed"
-      sizes="114x114"
-      href="icon.png"
-    />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="icon.png" />
     <!-- first- and second-generation iPad: -->
-    <link
-      rel="apple-touch-icon-precomposed"
-      sizes="72x72"
-      href="icon.png"
-    />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="icon.png" />
     <!-- non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
     <link rel="apple-touch-icon-precomposed" href="icon.png" />
     <!-- basic favicon -->
@@ -40,7 +28,8 @@
       integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="common.css" />
+    <!-- <link rel="stylesheet" href="common.css" /> -->
+    <link rel="stylesheet" href="common-hifi.css" />
   </head>
   <body>
     <!-- ########### -->
@@ -49,7 +38,11 @@
 
     <div class="interface-container">
       <div class="content">
-        <div id="startup-icon">ICON</div>
+        <div id="startup-icon">
+          <img src="icon.png" alt="" />
+        </div>
+
+        <!-- <h2 id="welcome-title">Welcome to MedCare</h2> -->
 
         <div style="position: absolute; width: 100%; bottom: 60px">
           <div class="button">Sign In</div>
@@ -57,7 +50,6 @@
           <div class="button">Sign Up</div>
         </div>
       </div>
-
     </div>
 
     <!-- ########### -->
@@ -66,7 +58,14 @@
     <hr />
 
     <div class="interface-container">
-      <header class="account-header"><h1>Sign In</h1></header>
+      <header class="account-header">
+        <div class="userinfo-top">
+          <div class="backbtn-top">
+            <span class="fas fa-chevron-left"></span>
+          </div>
+          <div class="username-top"><h1>Sign In</h1></div>
+        </div>
+      </header>
 
       <div class="content">
         <form action="">
@@ -79,7 +78,6 @@
           <div class="button">Sign In</div>
         </div>
       </div>
-
     </div>
 
     <!-- ########### -->
@@ -88,7 +86,14 @@
     <hr />
 
     <div class="interface-container">
-      <header class="account-header"><h1>Sign Up</h1></header>
+      <header class="account-header">
+        <div class="userinfo-top">
+          <div class="backbtn-top">
+            <span class="fas fa-chevron-left"></span>
+          </div>
+          <div class="username-top"><h1>Sign Up</h1></div>
+        </div>
+      </header>
 
       <div class="content">
         <form action="">
@@ -111,8 +116,12 @@
           <div style="display: flex; flex-direction: row">
             <input type="checkbox" id="terms" value="" id="" />
             <p style="margin-left: 10px; margin-top: 10px">
-              I agree to the <span style="text-decoration: underline;">Terms and Conditions</span> & 
-            <span style="text-decoration: underline;">Privacy Policy</span></p>
+              I agree to the
+              <span style="text-decoration: underline"
+                >Terms and Conditions</span
+              >
+              & <span style="text-decoration: underline">Privacy Policy</span>
+            </p>
           </div>
         </form>
 
@@ -120,7 +129,6 @@
           <div class="button">Sign In</div>
         </div>
       </div>
-
     </div>
 
     <!-- ########### -->
@@ -134,12 +142,27 @@
       </header>
 
       <div class="content mask">
+        <!-- hifi only -->
+        <ul>
+          <li class="selected"></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
         <div class="annotation proceed">
           <p>Tap on the hightlighted area to proceed</p>
         </div>
         <div class="annotation">
           <p>Add medication and alarms</p>
         </div>
+
+        <footer class="demo-footer arrow">
+          <div class="fas fa-arrow-down"></div>
+          <div class="fas fa-arrow-down"></div>
+          <div class="fas fa-arrow-down visible"></div>
+          <div class="fas fa-arrow-down"></div>
+          <div class="fas fa-arrow-down"></div>
+        </footer>
 
         <footer class="demo-footer">
           <a href="/">
@@ -183,26 +206,37 @@
     <!-- Guide-today -->
     <!-- ########### -->
     <hr />
-<h1>hifi</h1>
+    <h1>hifi</h1>
     <div class="interface-container">
       <header class="startup">
-        <!-- hifi only -->
-        <!-- <ul>
-          <li>dot</li>
-          <li>.</li>
-          <li>.</li>
-          <li>.</li>
-        </ul> -->
         <div class="skip-btn" style="z-index: 400">Skip</div>
       </header>
 
       <div class="content mask">
+        <!-- hifi only -->
+        <ul>
+          <li></li>
+          <li class="selected"></li>
+          <li></li>
+          <li></li>
+        </ul>
         <div class="annotation proceed">
           <p>Tap on the hightlighted area to proceed</p>
         </div>
         <div class="annotation">
           <p>Show today's todo list</p>
         </div>
+
+        <footer class="demo-footer arrow">
+          <div
+            class="fas fa-arrow-down visible"
+            style="transform: rotateZ(30deg)"
+          ></div>
+          <div class="fas fa-arrow-down"></div>
+          <div class="fas fa-arrow-down"></div>
+          <div class="fas fa-arrow-down"></div>
+          <div class="fas fa-arrow-down"></div>
+        </footer>
 
         <footer class="demo-footer">
           <a href="/Todo.html">
@@ -276,12 +310,30 @@
       </header>
 
       <div class="content mask">
+        <!-- hifi only -->
+        <ul>
+          <li></li>
+          <li></li>
+          <li class="selected"></li>
+          <li></li>
+        </ul>
         <div class="annotation proceed">
           <p>Tap on the hightlighted area to proceed</p>
         </div>
         <div class="annotation">
           <p>Display the calendar and your arrangement</p>
         </div>
+
+        <footer class="demo-footer arrow">
+          <div class="fas fa-arrow-down"></div>
+          <div
+            class="fas fa-arrow-down visible"
+            style="transform: rotateZ(15deg)"
+          ></div>
+          <div class="fas fa-arrow-down"></div>
+          <div class="fas fa-arrow-down"></div>
+          <div class="fas fa-arrow-down"></div>
+        </footer>
 
         <footer class="demo-footer">
           <a href="/Todo.html">
@@ -348,19 +400,37 @@
     <!-- Guide-users -->
     <!-- ########### -->
     <hr />
-<h1>hifi</h1>
+    <h1>hifi</h1>
     <div class="interface-container">
       <header class="startup">
         <!-- <div class="skip-btn" style="z-index: 400">Start</div> -->
       </header>
 
       <div class="content mask">
+        <!-- hifi only -->
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li class="selected"></li>
+        </ul>
         <div class="annotation proceed">
-          <p>Let's start</p>
+          <h1>Let's get started!</h1>
         </div>
         <div class="annotation">
           <p>Add and manage your users</p>
         </div>
+
+        <footer class="demo-footer arrow">
+          <div class="fas fa-arrow-down"></div>
+          <div class="fas fa-arrow-down"></div>
+          <div class="fas fa-arrow-down"></div>
+          <div
+            class="fas fa-arrow-down visible"
+            style="transform: rotateZ(-15deg)"
+          ></div>
+          <div class="fas fa-arrow-down"></div>
+        </footer>
 
         <footer class="demo-footer">
           <a href="/Todo.html">

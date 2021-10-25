@@ -28,7 +28,8 @@
       integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="common.css" />
+    <!-- <link rel="stylesheet" href="common.css" /> -->
+    <link rel="stylesheet" href="common-hifi.css" />
   </head>
   <body>
     <!-- ########### -->
@@ -43,11 +44,15 @@
       <div class="content">
         <div class="main-list">
           <div class="main-list-item user-item">
-            <div class="avartar-small">avartar</div>
+            <div class="avartar-min">
+              <img src="/avartar.jpg" alt="" />
+            </div>
             <div class="list-label">User 1</div>
           </div>
           <div class="main-list-item user-item">
-            <div class="avartar-small">avartar</div>
+            <div class="avartar-min">
+              <img src="/avartar.jpg" alt="" />
+            </div>
             <div class="list-label">User 2</div>
           </div>
         </div>
@@ -90,16 +95,26 @@
     <hr />
 
     <div class="interface-container">
-      <header class="account-header"><h1>Add User</h1></header>
+      <header class="account-header">
+        <div class="userinfo-top">
+          <div class="backbtn-top">
+            <span class="fas fa-chevron-left"></span>
+          </div>
+          <div class="username-top"><h1>Add User</h1></div>
+        </div>
+      </header>
 
       <div class="content">
-        <div id="avartar">Avartar</div>
+        <div id="avartar">
+          <!-- <img src="/avartar.jpg" alt=""> -->
+          image
+        </div>
         <form action="">
           <input name="firstname" id="" placeholder="First Name" />
           <input name="lastname" id="" placeholder="Last Name" />
           <input name="Age" id="" placeholder="Age" />
           <div id="Gender">
-            <div class="picker gender">Male</div>
+            <div class="picker gender selected">Male</div>
             <div class="picker gender">Female</div>
             <div class="picker gender">Non-binary</div>
           </div>
@@ -145,13 +160,19 @@
     <hr />
 
     <div class="interface-container">
-      <header class="user-header">
-        <div class="backbtn-top">&lt;</div>
-        <h1>User Details</h1>
+      <header class="account-header">
+        <div class="userinfo-top">
+          <div class="backbtn-top">
+            <span class="fas fa-chevron-left"></span>
+          </div>
+          <div class="username-top"><h1>User Details</h1></div>
+        </div>
       </header>
 
       <div class="content">
-        <div id="avartar">Avartar</div>
+        <div id="avartar">
+          <img src="/avartar.jpg" alt="" />
+        </div>
         <div class="main-list">
           <div class="main-list-item user-info">
             <div class="label">User:</div>
@@ -223,7 +244,14 @@
     <hr />
 
     <div class="interface-container">
-      <header class="account-header"><h1>Disease 1</h1></header>
+      <header class="account-header">
+        <div class="userinfo-top">
+          <div class="backbtn-top">
+            <span class="fas fa-chevron-left"></span>
+          </div>
+          <div class="username-top"><h1>Desease 1</h1></div>
+        </div>
+      </header>
 
       <div class="content">
         <div class="main-list">
@@ -306,7 +334,14 @@
     <hr />
 
     <div class="interface-container">
-      <header class="account-header"><h1>Repeat Config</h1></header>
+      <header class="account-header">
+        <div class="userinfo-top">
+          <div class="backbtn-top">
+            <span class="fas fa-chevron-left"></span>
+          </div>
+          <div class="username-top"><h1>Repeat Config</h1></div>
+        </div>
+      </header>
 
       <div class="content">
         <div class="main-list">
@@ -343,7 +378,6 @@
             <div class="arrow">&gt;</div>
           </div>
         </div>
-
       </div>
 
       <footer>
@@ -383,7 +417,14 @@
     <hr />
 
     <div class="interface-container">
-      <header><h1 id="diet-rec-title">Dietary Recommendation</h1></header>
+      <header class="account-header">
+        <div class="userinfo-top">
+          <div class="backbtn-top">
+            <span class="fas fa-chevron-left"></span>
+          </div>
+          <div class="username-top"><h1>Recommended Diet</h1></div>
+        </div>
+      </header>
 
       <div class="content">
         <div id="Diet">

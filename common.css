@@ -248,6 +248,7 @@ header #diet-rec-title {
 
 .main-list-item.user-info .info {
   width: 160px;
+  padding-right: 10px;
   text-indent: 1em;
   text-align: end;
   /* border: 1px solid red; */

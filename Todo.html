@@ -4,25 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="shortcut icon" href="icon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon" />
     <!-- third-generation iPad with high-resolution Retina display: -->
-    <link
-      rel="apple-touch-icon-precomposed"
-      sizes="144x144"
-      href="icon.png"
-    />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="icon.png" />
     <!-- iPhone with high-resolution Retina display: -->
-    <link
-      rel="apple-touch-icon-precomposed"
-      sizes="114x114"
-      href="icon.png"
-    />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="icon.png" />
     <!-- first- and second-generation iPad: -->
-    <link
-      rel="apple-touch-icon-precomposed"
-      sizes="72x72"
-      href="icon.png"
-    />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="icon.png" />
     <!-- non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
     <link rel="apple-touch-icon-precomposed" href="icon.png" />
     <!-- basic favicon -->
@@ -40,7 +28,8 @@
       integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="common.css" />
+    <!-- <link rel="stylesheet" href="common.css" /> -->
+    <link rel="stylesheet" href="common-hifi.css" />
   </head>
   <body>
     <!-- ########### -->
@@ -55,7 +44,13 @@
       <div class="content">
         <div class="main-list">
           <h2>8 a.m.</h2>
-          <div class="table-wrapper">
+          <div
+            class="table-wrapper"
+            style="
+              box-shadow: inset 0px -40px 28px -17px #afacaa;
+              background-color: var(--item-background);
+            "
+          >
             <table style="height: 300px">
               <tbody>
                 <tr>
@@ -97,12 +92,32 @@
               </tbody>
             </table>
           </div>
+          <div
+            style="
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              font-size: 24px !important;
+            "
+          >
+            <span
+              style="
+                width: 40px;
+                height: 40px;
+                /* border: 1px solid; */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              "
+              class="fas fa-chevron-down"
+            ></span>
+          </div>
         </div>
 
         <div class="main-list">
           <h2>9 a.m.</h2>
 
-          <table style="border: 1px solid black">
+          <table style="background-color: var(--item-background)">
             <tbody>
               <tr>
                 <td>User4</td>
@@ -117,7 +132,7 @@
         <div class="main-list">
           <h2>10 a.m.</h2>
 
-          <table style="border: 1px solid black">
+          <table style="background-color: var(--item-background)">
             <tbody>
               <tr>
                 <td>User1</td>
@@ -138,7 +153,7 @@
         <div class="main-list">
           <h2>11 a.m.</h2>
 
-          <table style="border: 1px solid black">
+          <table style="background-color: var(--item-background)">
             <tbody>
               <tr>
                 <td>User1</td>
@@ -201,7 +216,9 @@
         <div class="main-list">
           <h2>8 a.m.</h2>
 
-          <table style="height: 300px; border: 1px solid black">
+          <table
+            style="height: 300px; background-color: var(--item-background)"
+          >
             <tbody>
               <tr>
                 <td>User1</td>
@@ -246,7 +263,7 @@
         <div class="main-list">
           <h2>9 a.m.</h2>
 
-          <table style="border: 1px solid black">
+          <table style="background-color: var(--item-background)">
             <tbody>
               <tr>
                 <td>User4</td>
@@ -261,7 +278,7 @@
         <div class="main-list">
           <h2>10 a.m.</h2>
 
-          <table style="border: 1px solid black">
+          <table style="background-color: var(--item-background)">
             <tbody>
               <tr>
                 <td>User1</td>
@@ -282,7 +299,7 @@
         <div class="main-list">
           <h2>11 a.m.</h2>
 
-          <table style="border: 1px solid black">
+          <table style="background-color: var(--item-background)">
             <tbody>
               <tr>
                 <td>User1</td>

@@ -93,6 +93,10 @@ header {
   margin: 0;
 }
 
+.fas.fa-chevron-right{
+  font-size: 18px !important;
+}
+
 header.account-header {
   flex-direction: row;
   align-items: center;
@@ -354,11 +358,15 @@ width: 100px;
   padding-right: 10px;
   text-indent: 1em;
   text-align: end;
+  font-weight: normal;
   /* border: 1px solid red; */
 }
 
+.main-list-item.user-info.d.u{
+  border: none;
+}
+
 .main-list-item.user-info .d {
-  /* width: fit-content; */
   margin-right: 5px;
   padding: 5px 10px;
   /* border: 1px solid rgb(192, 192, 192); */
@@ -366,12 +374,13 @@ width: 100px;
   color: white;
   border-radius: 5px;
   background-color: var(--icon-background);
-  /* border: 1px solid red; */
 }
 
 .main-list-item.description {
   padding: 10px;
   height: auto;
+  font-weight: normal;
+  /* text-indent: 2em; */
 }
 .main-list-item.diet {
   margin: 20px 0;

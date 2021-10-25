@@ -4,6 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon" />
+    <!-- third-generation iPad with high-resolution Retina display: -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="icon.png" />
+    <!-- iPhone with high-resolution Retina display: -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="icon.png" />
+    <!-- first- and second-generation iPad: -->
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="icon.png" />
+    <!-- non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+    <link rel="apple-touch-icon-precomposed" href="icon.png" />
+    <!-- basic favicon -->
+    <link rel="shortcut icon" href="icon.png" />
     <title>UserManagement</title>
     <!-- <link
       rel="stylesheet"
@@ -76,7 +87,7 @@
     <!-- ########### -->
     <!-- Add User -->
     <!-- ########### -->
-    <hr>
+    <hr />
 
     <div class="interface-container">
       <header class="account-header"><h1>Add User</h1></header>
@@ -131,7 +142,7 @@
     <!-- ########### -->
     <!-- Add User -->
     <!-- ########### -->
-    <hr>
+    <hr />
 
     <div class="interface-container">
       <header class="user-header">
@@ -209,7 +220,7 @@
     <!-- ########### -->
     <!-- Disease Details -->
     <!-- ########### -->
-    <hr>
+    <hr />
 
     <div class="interface-container">
       <header class="account-header"><h1>Disease 1</h1></header>
@@ -239,25 +250,13 @@
             <div class="arrow">&gt;</div>
           </div>
           <div class="main-list-item user-info">
-            <div class="label">Times:</div>
+            <div class="label">Times a Day:</div>
             <div class="info">3 times</div>
             <div class="arrow">&gt;</div>
           </div>
           <div class="main-list-item user-info">
             <div class="label">Repeat:</div>
-            <div class="info">
-              <select name="" id="">
-                <option value="" selected>1 time</option>
-                <option value=""></option>
-                <option value=""></option>
-              </select>
-              Every
-              <select name="" id="">
-                <option value="" selected>1 day</option>
-                <option value=""></option>
-                <option value=""></option>
-              </select>
-            </div>
+            <div class="info">Weekly</div>
             <div class="arrow">&gt;</div>
           </div>
           <div class="main-list-item user-info">
@@ -302,9 +301,86 @@
     </div>
 
     <!-- ########### -->
+    <!-- Repeat Details -->
+    <!-- ########### -->
+    <hr />
+
+    <div class="interface-container">
+      <header class="account-header"><h1>Repeat Config</h1></header>
+
+      <div class="content">
+        <div class="main-list">
+          <div id="repeat-selector">
+            <div class="picker cycle">Daily</div>
+            <div class="picker cycle selected">Weekly</div>
+            <div class="picker cycle">Monthly</div>
+            <div class="picker cycle">Cycle</div>
+          </div>
+        </div>
+
+        <div class="main-list">
+          <div class="main-list-item user-info">
+            <div class="label">Repeat:</div>
+            <div class="info">
+              Every
+              <span style="border-bottom: 1px solid black; padding: 2px 0"
+                >2</span
+              >
+              <!-- <select name="week-num" id="">
+                <option value="1">1</option>
+                <option value="2" selected>2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select> -->
+              Week
+            </div>
+            <div class="arrow">&gt;</div>
+          </div>
+          <div class="main-list-item user-info">
+            <div class="label">Days of the Week:</div>
+            <div class="info">All</div>
+            <div class="arrow">&gt;</div>
+          </div>
+        </div>
+
+      </div>
+
+      <footer>
+        <a href="Todo.html">
+          <div class="functions">
+            <span class="far fa-clock"> </span>
+            <div class="f-label">Today</div>
+          </div>
+        </a>
+        <a href="Calendar.html">
+          <div class="functions">
+            <span class="far fa-calendar"></span>
+            <div class="f-label">Calendar</div>
+          </div>
+        </a>
+        <a href="MedManagement.html">
+          <div class="functions add-btn">+</div>
+        </a>
+        <a href="UserManagement.html">
+          <div class="functions">
+            <span class="far fa-user"></span>
+            <div class="f-label">People</div>
+          </div>
+        </a>
+        <a href="Settings.html">
+          <div class="functions">
+            <span class="fas fa-cog"></span>
+            <div class="f-label">Account</div>
+          </div>
+        </a>
+      </footer>
+    </div>
+
+    <!-- ########### -->
     <!-- Dietary Recommendation -->
     <!-- ########### -->
-    <hr>
+    <hr />
 
     <div class="interface-container">
       <header><h1 id="diet-rec-title">Dietary Recommendation</h1></header>
@@ -320,29 +396,13 @@
             <div class="img-container"></div>
 
             <div class="excerpt">
-            <h3>Title</h3>
-            <div class="diet-desc">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat
-              iste, magni natus consequatur corrupti quibusdam expedita fugit
-              nesciunt quod similique, ipsum eius repellendus! Maxime amet odio
-              neque modi sit illum.
-            </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="main-list">
-          <div class="main-list-item diet">
-            <div class="img-container"></div>
-
-            <div class="excerpt">
-            <h3>Title</h3>
-            <div class="diet-desc">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat
-              iste, magni natus consequatur corrupti quibusdam expedita fugit
-              nesciunt quod similique, ipsum eius repellendus! Maxime amet odio
-              neque modi sit illum.
-            </div>
+              <h3>Title</h3>
+              <div class="diet-desc">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Quaerat iste, magni natus consequatur corrupti quibusdam
+                expedita fugit nesciunt quod similique, ipsum eius repellendus!
+                Maxime amet odio neque modi sit illum.
+              </div>
             </div>
           </div>
         </div>
@@ -352,29 +412,13 @@
             <div class="img-container"></div>
 
             <div class="excerpt">
-            <h3>Title</h3>
-            <div class="diet-desc">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat
-              iste, magni natus consequatur corrupti quibusdam expedita fugit
-              nesciunt quod similique, ipsum eius repellendus! Maxime amet odio
-              neque modi sit illum.
-            </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="main-list">
-          <div class="main-list-item diet">
-            <div class="img-container"></div>
-
-            <div class="excerpt">
-            <h3>Title</h3>
-            <div class="diet-desc">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat
-              iste, magni natus consequatur corrupti quibusdam expedita fugit
-              nesciunt quod similique, ipsum eius repellendus! Maxime amet odio
-              neque modi sit illum.
-            </div>
+              <h3>Title</h3>
+              <div class="diet-desc">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Quaerat iste, magni natus consequatur corrupti quibusdam
+                expedita fugit nesciunt quod similique, ipsum eius repellendus!
+                Maxime amet odio neque modi sit illum.
+              </div>
             </div>
           </div>
         </div>
@@ -384,13 +428,13 @@
             <div class="img-container"></div>
 
             <div class="excerpt">
-            <h3>Title</h3>
-            <div class="diet-desc">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat
-              iste, magni natus consequatur corrupti quibusdam expedita fugit
-              nesciunt quod similique, ipsum eius repellendus! Maxime amet odio
-              neque modi sit illum.
-            </div>
+              <h3>Title</h3>
+              <div class="diet-desc">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Quaerat iste, magni natus consequatur corrupti quibusdam
+                expedita fugit nesciunt quod similique, ipsum eius repellendus!
+                Maxime amet odio neque modi sit illum.
+              </div>
             </div>
           </div>
         </div>
@@ -400,13 +444,45 @@
             <div class="img-container"></div>
 
             <div class="excerpt">
-            <h3>Title</h3>
-            <div class="diet-desc">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat
-              iste, magni natus consequatur corrupti quibusdam expedita fugit
-              nesciunt quod similique, ipsum eius repellendus! Maxime amet odio
-              neque modi sit illum.
+              <h3>Title</h3>
+              <div class="diet-desc">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Quaerat iste, magni natus consequatur corrupti quibusdam
+                expedita fugit nesciunt quod similique, ipsum eius repellendus!
+                Maxime amet odio neque modi sit illum.
+              </div>
             </div>
+          </div>
+        </div>
+
+        <div class="main-list">
+          <div class="main-list-item diet">
+            <div class="img-container"></div>
+
+            <div class="excerpt">
+              <h3>Title</h3>
+              <div class="diet-desc">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Quaerat iste, magni natus consequatur corrupti quibusdam
+                expedita fugit nesciunt quod similique, ipsum eius repellendus!
+                Maxime amet odio neque modi sit illum.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="main-list">
+          <div class="main-list-item diet">
+            <div class="img-container"></div>
+
+            <div class="excerpt">
+              <h3>Title</h3>
+              <div class="diet-desc">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Quaerat iste, magni natus consequatur corrupti quibusdam
+                expedita fugit nesciunt quod similique, ipsum eius repellendus!
+                Maxime amet odio neque modi sit illum.
+              </div>
             </div>
           </div>
         </div>

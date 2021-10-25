@@ -1,6 +1,12 @@
 *.jpg
 
+*.JPG
+
+*.jpeg
+
 *.png
+
+!icon.png
 
 *.pdf
 

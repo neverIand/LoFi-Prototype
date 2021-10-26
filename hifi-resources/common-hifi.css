@@ -67,6 +67,7 @@ a {
   /* background: url('/screen_compressed.png') no-repeat; */
   background-size: cover;
   pointer-events: none;
+  /* background: url("https://i.loli.net/2021/10/26/4gvqrVCzH6N2Bfn.png") no-repeat cover; */
   z-index: 500;
 }
 
@@ -393,7 +394,8 @@ width: 100px;
 }
 
 .main-list.overview {
-  margin-top: 0;
+  /* border: 1px solid black; */
+  /* border-radius: 10px; */
 }
 
 .main-list-item.event-item.expanded{
@@ -403,20 +405,11 @@ width: 100px;
   height: auto;
 }
 
-.main-list-item.event-item.r {
-  margin-top: 10px;
-  margin-bottom: 50px;
-  padding-right: 10px;
-  border: none;
-  background-color: #e2effa;
+.main-list-item.event-item {
 }
 
 .main-list-item.event-item .event {
   margin: 0 10px;
-}
-
-.main-list-item.event-item .event.name {
-  font-weight: bold;
 }
 
 .main-list.details {
@@ -476,16 +469,7 @@ width: 100px;
   height: 80px;
   background-color: antiquewhite;
   box-sizing: border-box;
-  overflow: hidden;
   /* border: 1px solid black; */
-  /* background-image: url('lean meat.png'); */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.img-container img{
-  width: 80px;
 }
 
 .excerpt{
@@ -503,6 +487,7 @@ width: 100px;
   width: 250px;
   padding-left: 5px;
   padding-right: 5px;
+  
   display: -webkit-box;
   overflow: hidden;
   font-weight: normal;
@@ -541,7 +526,6 @@ width: 100px;
   box-sizing: border-box;
   overflow: hidden;
   z-index: 0;
-  font-weight: normal;
 }
 
 .main-list div.table-wrapper {
@@ -551,25 +535,14 @@ width: 100px;
   z-index: 200;
 }
 
-.main-list table{
-  /* this attr will affect <tr> border */
-  border-collapse: collapse;
-}
+/* .main-list table{
+  border-radius: 4px;
+} */
 
 .main-list table td {
-  font-size: 16px !important;
+  font-size: 20px;
   height: 30px;
   line-height: 20px;
-  padding: 0 5px;
-}
-
-.main-list table td.name{
-  font-weight: bold;
-  font-size: 18px !important;
-}
-
-.main-list tbody tr{
-  border: 1px solid var(--border);
 }
 
 /* large button for registration page */
@@ -647,10 +620,6 @@ input {
   /* border: 1px solid red; */
 }
 
-#Alarm{
-  display: flex;
-}
-
 .picker.diet {
   width: 200px;
   height: 40px;
@@ -658,15 +627,6 @@ input {
 
 .picker.diet.selected {
   background-color: #d4d4d4;
-}
-
-.picker.diet.a {
-  width: 100%;
-  height: 40px;
-  color: #00463c;
-  font-weight: bold;
-  border-left: none;
-  border-bottom: none;
 }
 
 /* Date picker */
@@ -695,10 +655,9 @@ input {
 table#calendar-view {
   height: 300px;
   padding: 10px;
-  /* font-weight: bold; */
+  table-layout: fixed;
   border-spacing: 0;
-  border-collapse: separate;
-  border: 2px solid var(--border);
+  border: 1px solid var(--border);
   border-radius: 2px;
 }
 
@@ -853,17 +812,6 @@ footer.demo-footer.arrow .visible{
 
 .content.mask ul li.selected{
   background-color: var(--icon-background);
-}
-
-.content.mask.alarm{
-  align-items: center;
-}
-
-.alarm-window{
-  width: 300px;
-  border-radius: 10px;
-  background-color: #e2effa;
-  overflow: hidden;
 }
 
 .annotation {

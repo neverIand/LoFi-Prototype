@@ -3,6 +3,8 @@
   padding: 0;
   /* box-sizing: border-box; */
   font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: grayscale;
 }
 
 body {
@@ -84,6 +86,7 @@ header {
   color: white;
   background-color: black;
   box-sizing: border-box;
+  box-shadow: 0px 1px 5px rgb(153, 153, 153);
 }
 
 .backbtn-top .fas {
@@ -360,7 +363,7 @@ header #diet-rec-title {
   /* border: 1px solid red; */
 }
 
-.main-list-item.user-info .info.m{
+.main-list-item.user-info .info.m {
   width: 100%;
   /* border: 1px solid red;  */
 }
@@ -400,7 +403,7 @@ header #diet-rec-title {
   margin-top: 0;
 }
 
-.main-list-item.event-item{
+.main-list-item.event-item {
   font-size: 14px !important;
 }
 
@@ -412,8 +415,9 @@ header #diet-rec-title {
 }
 
 .main-list-item.event-item.r {
-  margin-top: 10px;
-  margin-bottom: 50px;
+  /* margin-top: 10px; */
+  /* margin-bottom: 50px; */
+  height: 30px;
   padding-right: 10px;
   border: none;
   background-color: #e2effa;
@@ -425,7 +429,7 @@ header #diet-rec-title {
   /* border: 1px solid red; */
 }
 
-.main-list-item.event-item .med-name{
+.main-list-item.event-item .med-name {
   font-weight: normal;
   padding-right: 10px;
 }
@@ -745,6 +749,7 @@ footer {
   background-color: rgb(214, 214, 214);
   box-sizing: border-box;
   z-index: 100;
+  box-shadow: 0px -1px 5px rgb(153, 153, 153);
 }
 
 footer.demo-footer {
@@ -861,11 +866,11 @@ footer.demo-footer.arrow .visible {
 
 .content.mask ul li {
   /* display: inline; */
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
   margin: 0 5px;
-  border-radius: 10px;
-  border: 1px solid var(--border);
+  border-radius: 50%;
+  border: 2px solid var(--border);
   background-color: var(--item-background);
 }
 
@@ -894,6 +899,7 @@ footer.demo-footer.arrow .visible {
 }
 
 .annotation.proceed {
+  color: #e7e7e7;
   font-size: 18px !important;
   top: 50%;
 }

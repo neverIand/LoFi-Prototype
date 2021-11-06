@@ -48,17 +48,17 @@ a {
 
 .interface-container {
   position: relative;
-  margin: 30px auto;
+  margin: 60px auto;
   width: 360px;
   height: 640px;
   /* box-sizing: border-box; */
   border: 1px solid var(--icon-background);
   overflow: hidden;
+  /* transform: skewY(-15deg); */
 }
 
-/* 好孩子不要学 */
 .interface-container::before {
-  /* content: url('/screen.png'); */
+  /* content: url('screen.png'); */
   content: '';
   display: block;
   position: absolute;
@@ -66,7 +66,8 @@ a {
   left: 0;
   width: 360px;
   height: 640px;
-  /* background: url('/screen_compressed.png') no-repeat; */
+  /* 好孩子不要学 */
+  background: url('screen_compressed.png') no-repeat;
   background-size: cover;
   pointer-events: none;
   z-index: 500;
@@ -749,6 +750,7 @@ footer {
   background-color: rgb(214, 214, 214);
   box-sizing: border-box;
   z-index: 100;
+  /* have some issues with .content.mask */
   box-shadow: 0px -1px 5px rgb(153, 153, 153);
 }
 
@@ -770,7 +772,7 @@ footer.demo-footer.arrow {
   bottom: 70px;
   font-size: 22px !important;
   color: white;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   visibility: hidden;
 }
 

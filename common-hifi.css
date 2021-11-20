@@ -54,7 +54,7 @@ a {
   /* box-sizing: border-box; */
   border: 1px solid var(--icon-background);
   overflow: hidden;
-  /* transform: skewY(-15deg); */
+  transform: skewY(-15deg);
 }
 
 .interface-container::before {

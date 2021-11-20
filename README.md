@@ -6,3 +6,7 @@
 <p>The code is quite a mess since we had to frequently iterate the design, and that means my primary goal was to make it looks like intended. Therefore, I did not have too much time to refactor the code, unfortunately.</p>
 
 <p>Live Server is preferred to view the interface while you can do it by open each file directly as well.</p>
+
+<p>Screenshot:</p>
+
+<img src="./screenshot.png">
